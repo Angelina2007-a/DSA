@@ -1,11 +1,11 @@
 ## 📊 DSA Progress
 
 <!-- PROGRESS_START -->
-**Overall Progress: 11%**
+**Overall Progress: 18%**
 
-`██░░░░░░░░░░░░░░░░░░` 11%
+`████░░░░░░░░░░░░░░░░` 18%
 
-📚 **3 / 28 Topics Completed**
+📚 **5 / 28 Topics Completed**
 <!-- PROGRESS_END -->
 
 ## ✅ DSA Roadmap
