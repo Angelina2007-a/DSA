@@ -1,0 +1,75 @@
+name: Update DSA Progress
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  update-progress:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Calculate DSA progress
+        shell: python
+        run: |
+          import re
+
+          readme = "README.md"
+
+          with open(readme, "r", encoding="utf-8") as file:
+              content = file.read()
+
+          completed = len(re.findall(r'- \[x\]', content, re.IGNORECASE))
+          total = len(re.findall(r'- \[[ xX]\]', content))
+
+          if total == 0:
+              percentage = 0
+          else:
+              percentage = round((completed / total) * 100)
+
+          bar_length = 20
+          filled = round((percentage / 100) * bar_length)
+          progress_bar = "█" * filled + "░" * (bar_length - filled)
+
+          new_progress = f"""<!-- PROGRESS_START -->
+          **Overall Progress: {percentage}%**
+
+          `{progress_bar}` {percentage}%
+
+          📚 **{completed} / {total} Topics Completed**
+          <!-- PROGRESS_END -->"""
+
+          pattern = r'<!-- PROGRESS_START -->.*?<!-- PROGRESS_END -->'
+
+          content = re.sub(
+              pattern,
+              new_progress,
+              content,
+              flags=re.DOTALL
+          )
+
+          with open(readme, "w", encoding="utf-8") as file:
+              file.write(content)
+
+          print(f"Progress: {completed}/{total} = {percentage}%")
+
+      - name: Commit updated README
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update DSA progress"
+            git push
+          fi
