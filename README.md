@@ -11,10 +11,10 @@
 ## ✅ DSA Roadmap
 
 ### 🟢 Basics
-- [] Time & Space Complexity
-- [] Arrays
-- [] Strings
-- [] Recursion
+- [ ] Time & Space Complexity
+- [ ] Arrays
+- [ ] Strings
+- [ ] Recursion
 
 ### 🔵 Linear Data Structures
 - [ ] Linked List
