@@ -19,7 +19,7 @@ Calculating...
 ### ☕ Java & Fundamentals
 
 - [x] Java Basics
-- [ ] Object-Oriented Programming
+- [x] Object-Oriented Programming
 - [ ] Time Complexity
 - [ ] Space Complexity
 
