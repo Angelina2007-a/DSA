@@ -11,10 +11,10 @@
 ## ✅ DSA Roadmap
 
 ### 🟢 Basics
-- [x] Time & Space Complexity
-- [x] Arrays
-- [x] Strings
-- [ ] Recursion
+- [] Time & Space Complexity
+- [] Arrays
+- [] Strings
+- [] Recursion
 
 ### 🔵 Linear Data Structures
 - [ ] Linked List
@@ -29,6 +29,15 @@
 - [ ] Merge Sort
 - [ ] Quick Sort
 - [ ] Binary Search
+
+### 🔎 Searching
+
+- [x] Linear Search
+- [x] Binary Search
+- [ ] Jump Search
+- [ ] Interpolation Search
+- [ ] Exponential Search
+- [ ] Fibonacci Search
 
 ### 🟠 Non-Linear Data Structures
 - [ ] Trees
