@@ -1,5 +1,3 @@
-package PT;
-
 public class LinearSearch {
 
 		 public static int linear(int[] arr, int target){
