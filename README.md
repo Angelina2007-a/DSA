@@ -10,17 +10,27 @@
 
 ## ✅ DSA Roadmap
 
-### 🟢 Basics
-- [ ] Time & Space Complexity
+### 🟢 Data Structures
+
 - [ ] Arrays
 - [ ] Strings
-- [ ] Recursion
-
-### 🔵 Linear Data Structures
-- [ ] Linked List
+- [x] Linked List
+- [ ] Doubly Linked List
+- [ ] Circular Linked List
 - [ ] Stack
 - [ ] Queue
+- [ ] Circular Queue
 - [ ] Deque
+- [ ] Hash Table
+- [ ] Hash Map
+- [ ] Hash Set
+- [ ] Trees
+- [ ] Binary Tree
+- [ ] Binary Search Tree
+- [ ] Heap
+- [ ] Priority Queue
+- [ ] Graph
+- [ ] Trie
 
 ### 🟣 Sorting & Searching
 - [x] Bubble Sort
