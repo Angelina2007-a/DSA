@@ -15,9 +15,9 @@
 - [ ] Arrays
 - [ ] Strings
 - [x] Linked List
-- [ ] Doubly Linked List
-- [ ] Circular Linked List
-- [ ] Stack
+- [x] Doubly Linked List
+- [x] Circular Linked List
+- [x] Stack
 - [ ] Queue
 - [ ] Circular Queue
 - [ ] Deque
